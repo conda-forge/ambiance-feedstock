@@ -1,5 +1,5 @@
 {% set name = "ambiance" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf90667e9e03bb7472c050e1871acbcfec6f87bf7be7a7e5087196df541c36db
+  sha256: 9f5a37efc20c7473c315f1f8ae791a685a9cc51ca83f295619b4c855d10b412c
   patches:
     # Patches to fix problems identified in setup.py
     # See https://github.com/airinnova/ambiance/pull/7
@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'A full implementation of the ICAO standard atmosphere 1993'
+  summary: A full implementation of the ICAO standard atmosphere 1993
   description: |
     Ambiance is a full implementation of the ICAO standard atmosphere 1993 written in Python.
     Based on International Civil Aviation Organization ; Manual Of The ICAO Standard Atmosphere
