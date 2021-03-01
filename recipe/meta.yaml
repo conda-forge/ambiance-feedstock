@@ -8,10 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 9f5a37efc20c7473c315f1f8ae791a685a9cc51ca83f295619b4c855d10b412c
-  patches:
-    # Patches to fix problems identified in setup.py
-    # See https://github.com/airinnova/ambiance/pull/7
-    - GH7.patch
 
 build:
   noarch: python
