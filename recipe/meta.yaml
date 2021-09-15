@@ -1,5 +1,5 @@
 {% set name = "ambiance" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 27629105cbf9cd0d39735801e3abb1ec3fbf3c15cdb6d36dd99eab773ed5b4f9
+  sha256: 1c1d7d34ba65e3d8a1ff8a32494d34db922f0f37caa82fafb76ef7b886a42df8
 
 build:
   noarch: python
